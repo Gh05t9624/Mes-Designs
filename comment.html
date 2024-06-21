@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Commentaires</title>
+        <link rel="stylesheet" href="assets/ressources/styles/comments.css">
+        <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="chat">
+
+                <div class="chat-header">
+                    <div class="profile">
+                        <div class="left">
+                            <a href="#">
+                                <i class="fa fa-arrow-left arrow"></i>
+                            </a>
+                            <img src="assets/images/pic-4.png" class="profile">
+                            <div class="details">
+                                <h2>Je vais à l'école...</h2>
+                                <span>Les commentaires...</span>
+                            </div>
+                        </div>
+                        <div class="right">
+
+                            <a href="#">
+                                <i class="fa fa-ellipsis-v icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-box">
+                    <div class="chat-r">
+                        <div class="mess mess-r">
+                            <span>
+                                <img src="assets/images/pic-4.png" class="auteur">
+                                <p>
+                                    <i class="black">Oumar Thioubou:</i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo suscipit culpa inventore sint sapiente eveniet doloribus nulla...
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A repudiandae at fugiat exercitationem atque unde sed iste sint nostrum eius, pariatur tempore quod repellendus qui saepe inventore nihil et. Suscipit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aperiam aliquam aliquid officiis delectus explicabo! Cupiditate sit, tempora, fugiat, tenetur soluta doloribus accusantium tempore ab libero nam blanditiis amet consequuntur.
+
+                                    <span>12h 15mn | <a href="#"> Répondre </a></span>
+                                    <b><a href="#">Réaction: <img src="assets/images/pic-4.png" class="reaction"> <img src="assets/images/pic-4.png" class="reaction"> <img src="assets/images/pic-4.png" class="reaction"> <img src="assets/images/pic-4.png" class="reaction"></a> </b>
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-footer">
+                    <form class="forms">
+                        <div id="imagePreview" class="preview">
+                            
+                        </div>
+                        <input type="file" id="imageInput" name="images" accept="image/*" onchange="previewFiles('imageInput', 'imagePreview', 3)">
+                        <div class="left">
+                            <a href="#" class="emo">
+                                <i class="fa fa-smile-o"></i>
+                            </a>
+                            <textarea spellcheck="false" placeholder="Votre commentaire..." required></textarea>
+                        </div>
+                        <div class="right">
+                            <label for="imageInput"><i class="fa fa-image"></i></label>
+
+                            <button type="submit"><i class="fa fa-send"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function previewFiles(inputId, previewId, maxFiles) {
+                const input = document.getElementById(inputId);
+                const preview = document.getElementById(previewId);
+    
+                // Réinitialiser la zone de prévisualisation
+                preview.innerHTML = '';
+    
+                // Récupérer les fichiers sélectionnés
+                const files = input.files;
+    
+                // Limiter le nombre de fichiers à afficher
+                const filesToDisplay = Array.from(files).slice(0, maxFiles);
+    
+                // Afficher les images et vidéos
+                for (const file of filesToDisplay) {
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'preview-item';
+    
+                    if (file.type.startsWith('image/')) {
+                        const img = document.createElement('img');
+                        img.src = URL.createObjectURL(file);
+                        img.alt = file.name;
+    
+                        const deleteIcon = createDeleteIcon(() => {
+                            preview.removeChild(previewItem);
+                        });
+    
+                        previewItem.appendChild(img);
+                        previewItem.appendChild(deleteIcon);
+                    } else if (file.type.startsWith('video/')) {
+                        const video = document.createElement('video');
+                        video.controls = true;
+    
+                        const source = document.createElement('source');
+                        source.src = URL.createObjectURL(file);
+                        source.type = file.type;
+    
+                        const deleteIcon = createDeleteIcon(() => {
+                            preview.removeChild(previewItem);
+                        });
+    
+                        video.appendChild(source);
+                        previewItem.appendChild(video);
+                        previewItem.appendChild(deleteIcon);
+                    }
+    
+                    preview.appendChild(previewItem);
+                }
+            }
+    
+            function createDeleteIcon(onClick) {
+                const deleteIcon = document.createElement('div');
+                deleteIcon.className = 'delete-icon';
+                deleteIcon.innerHTML = '&#10006;'; // Cross symbol
+                deleteIcon.addEventListener('click', onClick);
+                return deleteIcon;
+            }
+        </script>
+
+        <script src="assets/ressources/scripts/chats_message.js"></script>
+
+    </body>
+</html>

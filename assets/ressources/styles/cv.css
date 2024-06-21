@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root
+{
+      /*========== Colors ==========*/
+  --hue-color: 240;
+
+  --first-color: hsl(var(--hue-color), 53%, 49%);
+  --title-color: hsl(var(--hue-color), 53%, 15%);
+  --text-color: hsl(var(--hue-color), 1%, 4%);
+  --text-color-light: hsl(var(--hue-color), 12%, 65%);
+  --container-color: #fff;
+  --body-color: hsl(var(--hue-color), 24%, 94%);
+  --color-danger: #fa5252;
+
+  --color-primary-light: 0 0.8rem 0.8rem rgba(71, 7, 234, 0.2);
+  --color-danger-light: 0 0.8rem 0.8rem rgba(255, 67, 54, 0.2);
+  --color-success-light: 0 0.8rem 0.8rem rgba(34, 202, 75, 0.2);
+  --color-purple-light: 0 0.8rem 0.8rem rgba(160, 99, 245, 0.2);
+
+    /* Tailles */
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem
+    
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 210mm; /* Largeur de la feuille A4 */
+    height: 297mm; /* Hauteur de la feuille A4 */
+    margin: auto; /* Centrer le contenu */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Empêcher le débordement du contenu */
+    page-break-inside: avoid; /* Éviter que le contenu ne soit coupé entre les pages */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    page-break-after: avoid; /* Éviter que l'en-tête ne soit coupé entre les pages */
+}
+
+.profile, .experience, .education {
+    margin-bottom: 30px;
+    page-break-inside: avoid; /* Éviter que les sections ne soient coupées entre les pages */
+}
+
+.section-header {
+    border-bottom: 2px solid #299bd5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-header h2, h1
+{
+    color: #299bd5;
+}
+
+h3 {
+    color: #fa5252;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    margin-top: 30px;
+    page-break-after: always; /* Forcer un saut de page après le pied de page */
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/ressources/styles/fruit.css">
+
+</head>
+<body>
+
+    <section class="corp_du_site">
+
+        <div class="bg"></div>
+
+        <!-- Le Menu -->
+        <header>
+            <a href="#" class="logo">Fruits</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Whats's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Le Menu -->
+        <div class="content">
+            <div class="textBox">
+                <h2>
+                    Eat Fresh Everybody
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ex debitis? Qui et voluptatibus iure porro magnam ullam totam, cum maxime dolor dicta ipsa laboriosam, atque praesentium hic nihil eaque.
+                </p>
+                <a href="#" class="Learn">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="assets/images/apple.png" class="fruits">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li data-text="Apple" class="active"><img src="assets/images/apple.png" onclick="imgSlider('assets/images/apple.png'); changeBgColor('#fc4a55')"></li>
+
+            <li data-text="Mango"><img src="assets/images/mango.png" onclick="imgSlider('assets/images/mango.png'); changeBgColor('#ffcc02')"></li>
+
+            <li data-text="Watermelon"><img src="assets/images/watermelon.png" onclick="imgSlider('assets/images/watermelon.png'); changeBgColor('#7AFC4A')"></li>
+
+            <li data-text="DragonFruits"><img src="assets/images/dragonFruits.png" onclick="imgSlider('assets/images/dragonFruits.png'); changeBgColor('#FC4AED')"></li>
+
+            <li data-text="PineApple"><img src="assets/images/pineApple.png" onclick="imgSlider('assets/images/pineApple.png'); changeBgColor('#ffb42b')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+        </ul>
+
+    </section>
+    
+    <!-- Scripts -->
+    <script src="assets/ressources/scripts/fruit.js"></script>
+</body>
+</html>

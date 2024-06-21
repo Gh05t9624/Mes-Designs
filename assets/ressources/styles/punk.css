@@ -1,0 +1,136 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #222;
+    color: #0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #060;
+}
+
+.navbar-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-right ul li {
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px; /* Height of the fixed navbar */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #222;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.card {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.hacking-card {
+    width: 100%;
+}
+
+.hacking-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hacking-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #111;
+    color: #0f0;
+    border: 1px solid #0f0;
+}
+
+.hacking-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hacking-button:hover {
+    background-color: #060;
+}
+
+.hacking-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hacking-list li {
+    margin-bottom: 10px;
+}

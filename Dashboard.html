@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+
+        <!-- Link Icone -->
+        <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.min.css">
+
+        <!-- Link Css -->
+        <link rel="stylesheet" href="assets/ressources/styles/dashboard.css">
+
+    </head>
+    <body>
+
+        <!-- CONTENT -->
+            <section id="content">
+                <!-- NAVBAR -->
+                    <nav>
+                        <i class="fa fa-bars toggle-sidebar"></i>
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="search" name="" id="" placeholder="Recherche...">
+                                <button type="submit">
+                                    <i class="fa fa-search icon"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <a href="#" class="navlink">
+                            <i class="fa fa-bell icon"></i>
+                            <span class="badge">5</span>
+                        </a>
+
+                        <a href="#" class="navlink">
+                            <i class="fa fa-comments icon"></i>
+                            <span class="badge">8</span>
+                        </a>
+
+                        <span class="divider"></span>
+
+                        <div class="profile">
+                            <img src="assets/images/pic-4.png">
+                            <ul class="profile-link">
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-user icon"></i>
+                                        Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-cogs icon"></i>
+                                        Settings
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-sign-out icon"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                <!-- END NAVBAR -->
+
+                <!-- MAIN -->
+                    <main>
+                        <h1 class="title">Dashboard</h1>
+
+                        <ul class="breadcrumbs">
+                            <li><a href="#">Home</a></li>
+                            <li class="divider">/</li>
+                            <li><a href="#" class="active">Dashboard</a></li>
+                        </ul>
+
+                        <div class="info-data">
+                            <div class="card">
+                                <div class="head">
+                                    <div>
+                                        <h2> 1550 </h2>
+                                        <p> Traffic </p>
+                                    </div>
+                                    <i class="fa fa-line-chart icon down"></i>
+                                </div>
+                                <span class="progress faible" data-value="30%"></span>
+                                <span class="label">30%</span>
+                            </div>
+
+                            <div class="card">
+                                <div class="head">
+                                    <div>
+                                        <h2> 1550 </h2>
+                                        <p> Traffic </p>
+                                    </div>
+                                    <i class="fa fa-line-chart icon"></i>
+                                </div>
+                                <span class="progress" data-value="20%"></span>
+                                <span class="label">20%</span>
+                            </div>
+
+                            <div class="card">
+                                <div class="head">
+                                    <div>
+                                        <h2> 1550 </h2>
+                                        <p> Traffic </p>
+                                    </div>
+                                    <i class="fa fa-area-chart icon"></i>
+                                </div>
+                                <span class="progress" data-value="100%"></span>
+                                <span class="label">100%</span>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <div class="content-data">
+                                <div class="head">
+                                    <h3>Sales Report</h3>
+                                    <div class="menu">
+                                        <i class="fa fa-ellipsis-h icon"></i>
+                                        <ul class="menu-link">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Save</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="chart">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+
+                            <div class="content-data">
+                                <div class="head">
+                                    <h3>Chat Box</h3>
+                                    <div class="menu">
+                                        <i class="fa fa-ellipsis-h icon"></i>
+                                        <ul class="menu-link">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Save</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-data">
+                                <div class="head">
+                                    <h3>Sales Report</h3>
+                                    <div class="menu">
+                                        <i class="fa fa-ellipsis-h icon"></i>
+                                        <ul class="menu-link">
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Save</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="table-container">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Date</th>
+                                                <th>Titre</th>
+                                                <th>Prix</th>
+                                                <th>Pays</th>
+                                                <th>Suprimer</th>
+                                                <th>Editer</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="assets/images/pic-4.png">
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        2023-05-01
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        Offices Supplies
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        $250
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        Senegal
+                                                    </a>
+                                                </td>
+                                                <td><button class="danger">Supprimer</button></td>
+                                                <td><button class="primary">Editer</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                <!-- END MAIN -->
+            </section>
+        <!-- END CONTENT -->
+
+        <!-- SIDEBAR -->
+            <section id="sidebar">
+                <a href="#" class="brand"><i class="fa fa-smile-o icon"></i> ADMIN </a>
+                <ul class="side-menu">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa fa-dashboard icon"></i> Dashboard 
+                        </a>
+                    </li>
+
+                    <li class="divider" data-text="main"> Main </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-inbox icon"></i> Elements 
+                            <i class="fa fa-chevron-circle-right icon_right"></i> 
+                        </a>
+                        <ul class="side-dropdown">
+                            <li><a href="#">Alert</a></li>
+                            <li><a href="#">BAdges</a></li>
+                            <li><a href="#">Breadcrumbs</a></li>
+                            <li><a href="#">Button</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bar-chart-o icon"></i> Charts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angellist icon"></i> Widgets
+                        </a>
+                    </li>
+
+                    <li class="divider" data-text="tables and forms"> Tables and Forms </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table icon"></i> Tables 
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sticky-note-o icon"></i> Forms 
+                            <i class="fa fa-chevron-circle-right icon_right"></i> 
+                        </a>
+                        <ul class="side-dropdown">
+                            <li><a href="#">Basic</a></li>
+                            <li><a href="#">Select</a></li>
+                            <li><a href="#">Checkbox</a></li>
+                            <li><a href="#">Radio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="ads">
+                    <div class="wrapper">
+                        <a href="#" class="btn-upgrade">Upgrade</a>
+                        <p>Become a <span>Pro</span> member and enjoy <span>All Feature</span></p>
+                    </div>
+                </div>
+            </section>
+        <!-- END SIDEBAR -->
+
+        
+
+        <!-- Script js -->
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+        <script src="assets/dist/apexcharts.min.js"></script>
+        <script src="assets/ressources/scripts/dashboard.js"></script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #imagePreview, #videoPreview {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .preview-item {
+            margin: 5px;
+            position: relative;
+        }
+
+        .preview-item img, .preview-item video {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .delete-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 2px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulaire d'Upload</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="imageInput">Uploader des images (multiple autorisé):</label>
+        <input type="file" id="imageInput" name="images[]" accept="image/*" multiple onchange="previewFiles('imageInput', 'imagePreview', 3)">
+
+        <label for="videoInput">Uploader des vidéos:</label>
+        <input type="file" id="videoInput" name="videos[]" accept="video/*" onchange="previewFiles('videoInput', 'videoPreview', 3)">
+
+    </form>
+
+    <h2>Images uploadées :</h2>
+    <div id="imagePreview" class="preview"></div>
+
+    <h2>Vidéos uploadées :</h2>
+    <div id="videoPreview" class="preview"></div>
+
+    <script>
+        function previewFiles(inputId, previewId, maxFiles) {
+            const input = document.getElementById(inputId);
+            const preview = document.getElementById(previewId);
+
+            // Réinitialiser la zone de prévisualisation
+            preview.innerHTML = '';
+
+            // Récupérer les fichiers sélectionnés
+            const files = input.files;
+
+            // Limiter le nombre de fichiers à afficher
+            const filesToDisplay = Array.from(files).slice(0, maxFiles);
+
+            // Afficher les images et vidéos
+            for (const file of filesToDisplay) {
+                const previewItem = document.createElement('div');
+                previewItem.className = 'preview-item';
+
+                if (file.type.startsWith('image/')) {
+                    const img = document.createElement('img');
+                    img.src = URL.createObjectURL(file);
+                    img.alt = file.name;
+
+                    const deleteIcon = createDeleteIcon(() => {
+                        preview.removeChild(previewItem);
+                    });
+
+                    previewItem.appendChild(img);
+                    previewItem.appendChild(deleteIcon);
+                } else if (file.type.startsWith('video/')) {
+                    const video = document.createElement('video');
+                    video.controls = true;
+
+                    const source = document.createElement('source');
+                    source.src = URL.createObjectURL(file);
+                    source.type = file.type;
+
+                    const deleteIcon = createDeleteIcon(() => {
+                        preview.removeChild(previewItem);
+                    });
+
+                    video.appendChild(source);
+                    previewItem.appendChild(video);
+                    previewItem.appendChild(deleteIcon);
+                }
+
+                preview.appendChild(previewItem);
+            }
+        }
+
+        function createDeleteIcon(onClick) {
+            const deleteIcon = document.createElement('div');
+            deleteIcon.className = 'delete-icon';
+            deleteIcon.innerHTML = '&#10006;'; // Cross symbol
+            deleteIcon.addEventListener('click', onClick);
+            return deleteIcon;
+        }
+    </script>
+</body>
+</html>

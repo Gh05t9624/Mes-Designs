@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 240mm; /* Largeur de la feuille A4 */
+    height: 297mm; /* Hauteur de la feuille A4 */
+    margin: auto; /* Centrer le contenu */
+}
+
+.container {
+    width: 100%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Empêcher le débordement du contenu */
+    page-break-inside: avoid; /* Éviter que le contenu ne soit coupé entre les pages */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    page-break-after: avoid; /* Éviter que le titre ne soit coupé entre les pages */
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    page-break-inside: avoid; /* Éviter que les infos de l'étudiant ne soient coupées entre les pages */
+}
+
+.info div {
+    margin-bottom: 10px;
+}
+
+.info label {
+    font-weight: bold;
+}
+
+.logo img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.grades {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: normal;
+}
+
+td {
+    font-weight: bold;
+}
+
+/* Stylez selon vos préférences */
+
+/* Media queries pour les petits écrans */
+/* @media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        width: 90%;
+    }
+} */

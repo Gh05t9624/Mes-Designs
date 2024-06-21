@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Variable CSS */
+:root
+{
+    --header-height: 3rem;
+
+    
+
+    /* font and typography */
+    --body-font: 'Open Sans', sans-serif;
+
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --tiny-font-size: .625rem;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+
+:root
+{
+    /* Color (Couleur)  */
+    --primary-color-hue: 252;
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
+
+
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-light: hsl(252, 30%, var(--light-color-lightness));
+    --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+    --color-black: hsl(252, 30%, 10%);
+
+    /* Tailles */
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem
+    
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+              /* ==================== Main Body Start =====================  */
+.mainBody
+{
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+}
+
+.container-video
+{
+    flex: 1 1 1700px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
+.container-video .main-video
+{
+    margin-bottom: 7px;
+    border-radius: 5px;
+    width: 100%;
+}
+              /* ==================== Videos ====================  */
+.videos
+{
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid var(--color-primary);
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+.video_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video
+{
+    flex: 1 1 350px;
+    width: 350px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 1rem var(--color-primary);
+    border-radius: 4px;
+}
+
+.video_thumbnail
+{
+    width: 100%;
+    height: 170px;
+}
+
+.video_thumbnail video
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.video_details
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.title h3
+{
+    color: var(--color-dark);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.title span
+{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 14px;
+}
+
+h3
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+
+/* ==================== Les Responsivités ==================== */
+@media screen and (max-width: 767px) {
+    .mainBody
+    {
+        width: 100%;
+    }
+
+    .video
+    {
+        width: 100%;
+    }
+
+    .sidebar
+    {
+        display: none;
+    }
+}
+
+ 
+ @media (max-width:450px){
+ 
+    .title{
+       font-size: 15px;
+       text-align: center;
+    }
+ 
+    .video{
+       flex-flow: column;
+       gap:10px;
+    }
+ 
+    .list-video{
+       width: 100%;
+    }
+ 
+    .title{
+       font-size: 15px;
+       text-align: center;
+    }
+ 
+ }

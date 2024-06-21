@@ -1,0 +1,1993 @@
+
+body
+{
+	background-color : gray ;
+}
+
+section.horloge_platform
+{
+	position : fixed ;
+	width : 100% ;
+	height : 100% ;
+	top : 0 ;
+	left : 0 ;
+	display : flex ;
+	justify-content : center ;
+	align-items : center ;
+	font-weight : bold ;
+}
+
+div.horloge_cercle
+{
+	width : 250px ;
+	height : 250px ;
+	border : 4px solid rgba( 255 , 255 , 255 , 0.3 ) ;
+	border-radius : 100% ;
+	display : flex ;
+	justify-content : center ;
+	align-items : center ;
+	padding : 20px ;
+	box-shadow : 0px 0px 10px 4px silver ; 
+	color : #fff ;
+	background-color : #000 ;
+}
+
+label
+{
+	color : #fff ;
+}
+
+div.a12
+{
+	height : 250px ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+div.a1
+{
+	height : 250px ;
+	transform : rotate( 30deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a1
+{
+	display : inline-block ;
+	transform : rotate( -30deg ) ;
+}
+
+div.a2
+{
+	height : 250px ;
+	transform : rotate( 60deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a2
+{
+	display : inline-block ;
+	transform : rotate( -60deg ) ;
+}
+
+div.a3
+{
+	height : 250px ;
+	transform : rotate( 90deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a3
+{
+	display : inline-block ;
+	transform : rotate( -90deg ) ;
+}
+
+div.a4
+{
+	height : 250px ;
+	transform : rotate( 120deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a4
+{
+	display : inline-block ;
+	transform : rotate( -120deg ) ;
+}
+
+div.a5
+{
+	height : 250px ;
+	transform : rotate( 150deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a5
+{
+	display : inline-block ;
+	transform : rotate( -150deg ) ;
+}
+
+div.a6
+{
+	height : 250px ;
+	transform : rotate( 180deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a6
+{
+	display : inline-block ;
+	transform : rotate( -180deg ) ;
+}
+div.a7
+{
+	height : 250px ;
+	transform : rotate( 210deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a7
+{
+	display : inline-block ;
+	transform : rotate( -210deg ) ;
+}
+
+div.a8
+{
+	height : 250px ;
+	transform : rotate( 240deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a8
+{
+	display : inline-block ;
+	transform : rotate( -240deg ) ;
+}
+
+div.a9
+{
+	height : 250px ;
+	transform : rotate( 270deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a9
+{
+	display : inline-block ;
+	transform : rotate( -270deg ) ;
+}
+
+div.a10
+{
+	height : 250px ;
+	transform : rotate( 300deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a10
+{
+	display : inline-block ;
+	transform : rotate( -300deg ) ;
+}
+
+div.a11
+{
+	height : 250px ;
+	transform : rotate( 330deg ) ;
+	display : inline-block ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+label.a11
+{
+	display : inline-block ;
+	transform : rotate( -330deg ) ;
+}
+
+div.seconde_cercle
+{
+	border-radius : 100% ;
+	width : 250px ;
+	height : 250px ;
+	display : flex ;
+	justify-content : center ;
+	align-items : top ;
+	position : fixed ;
+	z-index : 3 ;
+}
+
+div.seconde_aiguille
+{
+	height : 65% ;
+	width : 0px ;
+	border : 1px solid gray ;
+}
+
+div.bout
+{
+	height : 30px ;
+	width : 2px ;
+	background-color : red ;
+	margin-left : -1px ;
+	position : fixed ;
+	margin-top : -5px ;
+	border-top-left-radius : 100% ;
+	border-top-right-radius : 100% ;
+}
+
+div.que
+{
+	height : 30px ;
+	width : 4px ;
+	background-color : red ;
+	margin-left : -2px ;
+	position : fixed ;
+	margin-top : 55% ;
+	border-top-left-radius : 50px ;
+	border-top-right-radius : 50px ;
+}
+
+div.minute_cercle
+{
+	border-radius : 100% ;
+	width : 240px ;
+	height : 240px ;
+	display : flex ;
+	justify-content : center ;
+	align-items : top ;
+	transform : rotate( 30deg ) ;
+	position : fixed ;
+	z-index : 1 ;
+}
+
+div.minute_aiguille
+{
+	height : 60% ;
+	width : 0px ;
+	border : 2px solid red ;
+	border-bottom-left-radius : 20px ;
+	border-bottom-right-radius : 20px ;
+}
+
+div.b_2
+{
+	position : fixed ;
+	width : 4px ;
+	height : 40px ;
+	background-color : red ;
+	margin-left : -2px ;
+	margin-top : -10px ;
+	border-top-left-radius : 100% ;
+	border-top-right-radius : 100% ;
+}
+
+div.heure_cercle
+{
+	border-radius : 100% ;
+	width : 180px ;
+	height : 180px ;
+	display : flex ;
+	justify-content : center ;
+	align-items : top ;
+	transform : rotate( 90deg ) ;
+	position : fixed ;
+	z-index : 2 ;
+}
+
+div.heure_aiguille
+{
+	height : 60% ;
+	width : 0px ;
+	border : 2px solid blue ;
+	border-bottom-left-radius : 20px ;
+	border-bottom-right-radius : 20px ;
+}
+
+div.b_b_2
+{
+	position : fixed ;
+	width : 4px ;
+	height : 40px ;
+	background-color : blue ;
+	margin-left : -2px ;
+	margin-top : -10px ;
+	border-top-left-radius : 100% ;
+	border-top-right-radius : 100% ;
+}
+
+label
+{
+	text-align : center ;
+	display : flex ;
+	justify-content : center ;
+	align-items : center ;
+}
+
+div.circle1
+{
+	width : 280px ;
+	height : 280px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	border-radius : 100% ;
+}
+
+div.f_12
+{
+	border : 1px solid red ;
+	background-color : #fff ;
+	position : fixed ;
+	width : 10px ;
+	height : 10px ;
+	transform : rotate( 45deg ) ;
+}
+
+div.f_f_12
+{
+	width : 16px ;
+	height : 8px ;
+	background-color : #000 ;
+	position : fixed ;
+	margin-top : -2px ;
+	margin-left : -1px ;
+	border-bottom : 1px solid red ;
+}
+
+div.c_f_1
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate( 30deg ) ;
+}
+
+div.f_1
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_2
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate( 60deg ) ;
+}
+
+div.f_2
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_3
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate( 90deg ) ;
+}
+
+div.f_3
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid red ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_4
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate( 120deg ) ;
+}
+
+div.f_4
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_5
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate( 150deg ) ;
+}
+
+div.f_5
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_6
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate( 180deg ) ;
+}
+
+div.f_6
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid red ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_7
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(210deg ) ;
+}
+
+div.f_7
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_8
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(240deg ) ;
+}
+
+div.f_8
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_9
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(270deg ) ;
+}
+
+div.f_9
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid red ;
+	margin-top : 4px ;
+	margin-left : 0px ;
+}
+
+div.c_f_10
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(300deg ) ;
+}
+
+div.f_10
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 2px ;
+	margin-left : 0px ;
+}
+
+div.c_f_11
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(330deg ) ;
+}
+
+div.f_11
+{
+	height : 8px ;
+	width : 3px ;
+	position : fixed ;
+	background-color : #fff ;
+	border : 1px solid #fff ;
+	margin-top : 2px ;
+	margin-left : 0px ;
+}
+
+div.c_f_111
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(6deg ) ;
+}
+
+div.f_111
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_112
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(12deg ) ;
+}
+
+div.f_112
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_113
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(18deg ) ;
+}
+
+div.f_113
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+div.c_f_114
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(24deg ) ;
+}
+
+div.f_114
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_115
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(36deg ) ;
+}
+
+div.f_115
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_116
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(42deg ) ;
+}
+
+div.f_116
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_117
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(48deg ) ;
+}
+
+div.f_117
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_118
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(54deg ) ;
+}
+
+div.f_118
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_119
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(66deg ) ;
+}
+
+div.f_119
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1110
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(72deg ) ;
+}
+
+div.f_1110
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1111
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(78deg ) ;
+}
+
+div.f_1111
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1112
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(84deg ) ;
+}
+
+div.f_1112
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1113
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(96deg ) ;
+}
+
+div.f_1113
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1114
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(102deg ) ;
+}
+
+div.f_1114
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1115
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(108deg ) ;
+}
+
+div.f_1115
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+div.c_f_1116
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(114deg ) ;
+}
+
+div.f_1116
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1117
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(126deg ) ;
+}
+
+div.f_1117
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1118
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(132deg ) ;
+}
+
+div.f_1118
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1119
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(138deg ) ;
+}
+
+div.f_1119
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1120
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(144deg ) ;
+}
+
+div.f_1120
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1121
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(156deg ) ;
+}
+
+div.f_1121
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1122
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(162deg ) ;
+}
+
+div.f_1122
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1123
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(168deg ) ;
+}
+
+div.f_1123
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1124
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(174deg ) ;
+}
+
+div.f_1124
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1125
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(186deg ) ;
+}
+
+div.f_1125
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1126
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(192deg ) ;
+}
+
+div.f_1126
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1127
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(198deg ) ;
+}
+
+div.f_1127
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1128
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(204deg ) ;
+}
+
+div.f_1128
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1129
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(216deg ) ;
+}
+
+div.f_1129
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1130
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(222deg ) ;
+}
+
+div.f_1130
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1131
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(228deg ) ;
+}
+
+div.f_1131
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1132
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(234deg ) ;
+}
+
+div.f_1132
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1133
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(246deg ) ;
+}
+
+div.f_1133
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1134
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(252deg ) ;
+}
+
+div.f_1134
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1135
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(258deg ) ;
+}
+
+div.f_1135
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1136
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(264deg ) ;
+}
+
+div.f_1136
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1137
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(276deg ) ;
+}
+
+div.f_1137
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1138
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(282deg ) ;
+}
+
+div.f_1138
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1139
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(288deg ) ;
+}
+
+div.f_1139
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1140
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(294deg ) ;
+}
+
+div.f_1140
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1141
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(306deg ) ;
+}
+
+div.f_1141
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1142
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(312deg ) ;
+}
+
+div.f_1142
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1143
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(318deg ) ;
+}
+
+div.f_1143
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1144
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(324deg ) ;
+}
+
+div.f_1144
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1145
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(336deg ) ;
+}
+
+div.f_1145
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1146
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(342deg ) ;
+}
+
+div.f_1146
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1147
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(348deg ) ;
+}
+
+div.f_1147
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.c_f_1148
+{
+	position : fixed ;
+	height : 280px ;
+	width : 4px ;
+	transform : rotate(354deg ) ;
+}
+
+div.f_1148
+{
+	height : 8px ;
+	width : 1px ;
+	position : fixed ;
+	background-color : #fff ;
+	margin-top : 5px ;
+	margin-left : 2px ;
+}
+
+div.autor
+{
+	position : fixed ;
+	margin-top : -105px ;
+	color : silver ;
+	z-index : 1 ;
+}
+
+label.autor
+{
+	letter-spacing : 1px ;
+}
+
+label.autors
+{
+	color : rgba( 255 , 255 , 255 , 0.4 );
+	font-weight : normal ;
+	font-size : 14px ;
+	display : block ;
+	margin-top : 5px ;
+}
+
+div.circle2
+{
+	width : 292px ;
+	height : 292px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	border-radius : 100% ;
+	border : 4px solid rgba( 0 , 0 , 0 , 0.8 ) ;
+}
+
+div.circle3
+{
+	width : 288px ;
+	height : 288px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	border-radius : 100% ;
+	border : 3px solid rgba( 255 , 255 , 255 , 0.3 ) ;
+	box-shadow : 0px 0px 4px 2px rgba( 255 , 255 , 255 , 0.3 ) ;
+}
+
+div.circle4
+{
+	width : 299px ;
+	height : 299px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	border-radius : 100% ;
+	border : 10px solid silver ;
+	z-index : 3 ;
+}
+
+div.circle5
+{
+	width : 300px ;
+	height : 300px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	border-radius : 100% ;
+	box-shadow : 0px 0px 3px 5px #000 ;
+	border : 20px solid rgba( 0 , 0 , 0 , 0.5 );
+	z-index : 3 ;
+}
+
+div.circle6
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -150px ;
+	margin-left : -220px ;
+	border-top-left-radius : 100% ;
+}
+
+
+div.circle7
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -143px ;
+	margin-left : 220px ;
+	border-top-right-radius : 100% ;
+}
+
+div.circle8
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : 151px ;
+	margin-left : 220px ;
+	border-bottom-right-radius : 100% ;
+}
+
+div.circle9
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : 150px ;
+	margin-left : -220px ;
+	border-bottom-left-radius : 100% ;
+}
+
+div.bar1
+{
+	width : 3px ;
+	height : 70px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : 340px ;
+	margin-left : -170px ;
+	background-color : silver ;
+	border-bottom-right-radius : 5px ;
+}
+
+div.bar2
+{
+	width : 3px ;
+	height : 70px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : 340px ;
+	margin-left : 170px ;
+	background-color : silver ;
+	border-bottom-left-radius : 5px ;
+}
+
+div.bar3
+{
+	width : 3px ;
+	height : 70px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : -333px ;
+	margin-left : 170px ;
+	background-color : silver ;
+	border-top-left-radius : 5px ;
+}
+
+div.bar4
+{
+	width : 3px ;
+	height : 70px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : -340px ;
+	margin-left : -170px ;
+	background-color : silver ;
+	border-top-right-radius : 5px ;
+}
+
+div.bar5
+{
+	width : 168px ;
+	height : 45px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : -400px ;
+	margin-left : 1px ;
+	background-color : #000 ;
+	border-top-left-radius : 100% ;
+	border-bottom-left-radius : 8px ;
+	border-bottom-right-radius : 8px ;
+	border-top-right-radius : 100% ;
+	border-bottom : 3px solid black ;
+	z-index : 3 ;
+}
+
+div.bar6
+{
+	width : 168px ;
+	height : 95px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : -300px ;
+	margin-left : 1px ;
+	background-color : #957e62 ;
+	z-index : -1 ;
+}
+
+div.bar7
+{
+	width : 168px ;
+	height : 40px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : 400px ;
+	margin-left : 1px ;
+	background-color : #000 ;
+	border-bottom-left-radius : 100% ;
+	border-top-left-radius : 78px ;
+	border-top-right-radius : 78px ;
+	border-bottom-right-radius : 100% ;
+	border-bottom : 3px solid black ;
+	z-index : 3 ;
+}
+
+div.bar8
+{
+	width : 168px ;
+	height : 95px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : 300px ;
+	margin-left : 1px ;
+	background-color : #957e62 ;
+	z-index : -1 ;
+}
+
+div.bar9
+{
+	width : 173px ;
+	height : 49px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : 405px ;
+	margin-left : 1px ;
+	background-color : #000 ;
+	z-index : 3 ;
+	border-bottom-left-radius : 100% ;
+	border-bottom-right-radius : 100% ;
+	border-top-left-radius : 8px ;
+	border-top-right-radius : 8px ;
+}
+
+div.bar10
+{
+	width : 173px ;
+	height : 49px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : -405px ;
+	margin-left : 0px ;
+	background-color : #000 ;
+	z-index : 3 ;
+	border-bottom-left-radius : 8px ;
+	border-bottom-right-radius : 8px ;
+	border-top-left-radius : 100% ;
+	border-top-right-radius : 100% ;
+}
+
+div.bar11
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : 90px ;
+	margin-left : 90px ;
+	border-top-right-radius : 100% ;
+	border-top-left-radius : 9px ;
+	transform : rotate( 90deg ) ;
+}
+
+div.bar12
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -50px ;
+	margin-left : 90px ;
+	border-top-left-radius : 100% ;
+	border-top-right-radius : 9px ;
+	transform : rotate( 90deg ) ;
+}
+
+div.bar13
+{
+	width : 5px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : 20px ;
+	margin-left : 90px ;
+	border-top-left-radius : 100% ;
+	border-top-right-radius : 9px ;
+	transform : rotate( 90deg ) ;
+}
+
+div.bar14
+{
+	width : 20px ;
+	height : 20px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : -1 ;
+	margin-top : 20px ;
+	margin-left : 345px ;
+	background-color : silver ;
+	border-top-right-radius : 50px ;
+	border-bottom-right-radius : 50px ;
+	cursor : pointer;
+}
+
+div.circle_c
+{
+	border-radius : 100% ;
+	width : 296px ;
+	height : 296px ;
+	display : flex ;
+	justify-content : center ;
+	align-items : center ;
+	position : fixed ;
+	z-index : 1 ;
+	border  :3px solid #000 ;
+	z-index : 3 ;
+}
+
+div.bar14:active
+{
+	margin-left : 335px ;
+	transition-property : margin-left ;
+	transition-duration : 500ms ;
+}
+
+div.m_scnd
+{
+	position : fixed ;
+	margin-left : -130px ;
+	margin-top : 100px ; 
+	color : silver ;
+	padding : 2px ;
+	box-shadow : 0px 0px 4px 2px silver ;
+	opacity : 0 ;
+}
+
+div.scnd
+{
+	position : fixed ;
+	margin-left : -50px ;
+	margin-top : 100px ;
+	padding : 2px ;
+	box-shadow : 0px 0px 4px 2px silver ;
+	opacity : 0 ;
+}
+
+div.min
+{
+	position : fixed ;
+	margin-left : 30px ;
+	margin-top : 100px ; 
+	padding : 2px ;
+	box-shadow : 0px 0px 4px 2px silver ;
+	opacity : 0 ;
+}
+
+div.hours
+{
+	position : fixed ;
+	margin-left : 110px ;
+	margin-top : 100px ; 
+	color : gray ; 
+	padding : 2px ;
+	box-shadow : 0px 0px 4px 2px silver ;
+	opacity : 0 ;
+}
+
+/* label.hours
+{
+	
+} */
+
+div.bar15
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -50px ;
+	margin-left : -70px ;
+	border-bottom-left-radius : 100% ;
+	border-bottom-right-radius : 9px ;
+	transform : rotate( 130deg ) ;
+}
+
+div.bar16
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -0px ;
+	margin-left : -90px ;
+	border-bottom-right-radius : 100% ;
+	border-bottom-left-radius : 9px ;
+	transform : rotate( 110deg ) ;
+}
+
+div.bar17
+{
+	width : 5px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : 15px ;
+	margin-left : -100px ;
+	border-bottom-left-radius : 100% ;
+	border-bottom-right-radius : 9px ;
+	transform : rotate( 130deg ) ;
+}
+
+div.bar18
+{
+	width : 20px ;
+	height : 20px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : -156px ;
+	margin-left : -310px ;
+	background-color : silver ;
+	border-top-left-radius : 5px ;
+	border-bottom-left-radius : 5px ;
+	cursor : pointer;
+	transform : rotate( 28deg ) ;
+}
+
+div.bar18:active
+{
+	margin-left : -290px ;
+	transition-property : margin-left ;
+	transition-duration : 500ms ;
+}
+
+div.bar19
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -20px ;
+	margin-left : -100px ;
+	border-bottom-left-radius : 100% ;
+	border-bottom-right-radius : 9px ;
+	transform : rotate( 70deg ) ;
+}
+
+div.bar20
+{
+	width : 50px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : 30px ;
+	margin-left : -80px ;
+	border-bottom-right-radius : 100% ;
+	border-bottom-left-radius : 9px ;
+	transform : rotate( 50deg ) ;
+}
+
+div.bar21
+{
+	width : 5px ;
+	height : 260px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	box-shadow : 0px 0px 10px 5px #000 ;
+	z-index : 0 ;
+	margin-top : -30px ;
+	margin-left : -120px ;
+	border-bottom-left-radius : 100% ;
+	border-bottom-right-radius : 9px ;
+	transform : rotate( -130deg ) ;
+}
+
+div.bar22
+{
+	width : 20px ;
+	height : 20px ;
+	position : fixed ;
+	display : flex ;
+	justify-content : center ;
+	z-index : 0 ;
+	margin-top : 133px ;
+	margin-left : -323px ;
+	background-color : silver ;
+	border-top-left-radius : 5px ;
+	border-bottom-left-radius : 5px ;
+	cursor : pointer;
+	transform : rotate( -25deg ) ;
+}
+
+div.bar22:active
+{
+	margin-left : -310px ;
+	transition-property : margin-left ;
+	transition-duration : 500ms ;
+}
