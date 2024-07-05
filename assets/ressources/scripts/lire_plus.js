@@ -12,5 +12,5 @@ parentContainer.addEventListener('click', event => {
 
     currentText.classList.toggle('read-more-text--show');
 
-    current.textContent = current.textContent.includes('..Lire plus') ? "Voir moin" : "...Lire Plus";
+    current.textContent = current.textContent.includes("...Lire plus") ? "Voir moins" : "...Lire plus";
 })
