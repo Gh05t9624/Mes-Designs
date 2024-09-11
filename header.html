@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunPrise</title>
+
+    <link rel="stylesheet" href="assets/ressources/styles/header.css">
+    <link rel="stylesheet" href="assets/ressources/styles/postes.css">
+    <link rel="stylesheet" href="assets/ressources/styles/sidebarLeft.css">
+
+    <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <!-- ======== Header ======== -->
+    <header class="header" id="header">
+        <nav class="nav cont">
+            <a href="#" class="nav_logo">
+                <img src="assets/images/SunPrice.png">
+                <!-- <h1><span class="write">Sun</span><b class="Prise">Price</b></h1> -->
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link active-link">
+                            <i class="fa fa-home nav_icon"></i>
+                            <span class="nav_name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa fa-shopping-bag nav_icon"></i>
+                            <span class="nav_name">Boutiques</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa fa-shopping-cart nav_icon"></i>
+                            <span class="nav_name">Super-Marchés</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa fa-shopping-basket nav_icon"></i>
+                            <span class="nav_name">Superettes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa fa-handshake-o nav_icon"></i>
+                            <span class="nav_name">Particuliers</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class="fa fa-car nav_icon"></i>
+                            <span class="nav_name">Stations-Services</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="assets/images/pic-4.png" class="nav_img" onclick="toggle()">
+            <ul class="profil-dropdown-list">
+                <li class="profil-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        Votre Profil
+                    </a>
+                </li>
+
+                <li class="profil-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa fa-map"></i>
+                        Votre Localisation
+                    </a>
+                </li>
+
+                <li class="profil-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa fa-line-chart"></i>
+                        Analyser votre Compte
+                    </a>
+                </li>
+
+                <li class="profil-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa fa-sliders"></i>
+                        Paramétres
+                    </a>
+                </li>
+
+                <li class="profil-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa fa-question-circle"></i>
+                        Aide Support
+                    </a>
+                </li>
+
+                <hr>
+
+                <li class="profil-dropdown-list-item">
+                    <a href="#">
+                        <i class="fa fa-sign-out"></i>
+                        Déconnexion
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="postes">
+
+            <div class="search-form">
+                <form class="search">
+                    <div class="form-group">
+                        <input type="search" name="poste" id="search-input" placeholder="Rechercher un produit dans toutes vendeurs"/>
+                        <button type="submit" >
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="section_banner header_banner">
+                <div class="slider">
+                    <div class="sliderP">
+                        <a href="#">
+                            <img src="assets/images/back1.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="sliderP">
+                        <a href="#">
+                            <img src="assets/images/back2.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="sliderP">
+                        <a href="#">
+                            <img src="assets/images/back3.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="sliderP">
+                        <a href="#">
+                            <img src="assets/images/back4.jpg">
+                        </a>
+                    </div>
+                
+                    <div class="lines PageLines">
+                        <div class="line_P" onclick="currentSlideP(1)"></div>
+                
+                        <div class="line_P" onclick="currentSlideP(2)"></div>
+                
+                        <div class="line_P" onclick="currentSlide(3)"></div>
+                
+                        <div class="line_P" onclick="currentSlide(4)"></div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <h1 class="section_title">Home</h1>
+
+            <div class="tarifs">
+                <div class="valeur-price moins">
+                    <h1><i class="fa fa-arrow-down write"></i> - Chers</h1>
+                    <b class="fa fa-money"><span> 500 FCFA </span> </b>
+                </div>
+                <div class="valeur-price plus">
+                    <h1><i class="fa fa-arrow-up write"></i> + Chers</h1>
+                    <b class="fa fa-money"><span> 1000 FCFA </span> </b>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <a href="#" class="product-card">
+                    <img src="assets/images/pineApple.png">
+                    <p>pineApple</p>
+                    <h4>Auchan</h4>
+                    <div>
+                        <div class="rating">
+                            <span><i class="fa fa-star"></i></span>
+                            549
+                        </div>
+                        <div class="price">
+                            Start from: <span>1500 FCFA</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img src="assets/images/dragonFruits.png">
+                    <p>pineApple</p>
+                    <h4>Auchan</h4>
+                    <div>
+                        <div class="rating">
+                            <span><i class="fa fa-star"></i></span>
+                            549
+                        </div>
+                        <div class="price">
+                            Start from: <span>1500 FCFA</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="product-card">
+                    <img src="assets/images/back1.jpg">
+                    <p>pineApple</p>
+                    <h4>Auchan</h4>
+                    <div>
+                        <div class="rating">
+                            <span><i class="fa fa-star"></i></span>
+                            549
+                        </div>
+                        <div class="price">
+                            Start from: <span>1500 FCFA</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <ul class="images">
+                    <li class="card filters">
+                        <a href="#"><img src="assets/images/Antman.jpg"></a>
+                        <div class="price">
+                            <h3>10 000 <br> FCFA</h3>
+                        </div>
+                        <div class="details">
+                            <div class="title">
+                                <h1>TOTO</h1>
+                                <p>
+                                    <span>Mis en vente depuis le...</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card filters">
+                        <a href="#"><img src="assets/images/back5.jpg"></a>
+                        <div class="price">
+                            <h3>10 000 <br> FCFA</h3>
+                        </div>
+                        <div class="details">
+                            <div class="title">
+                                <h1>TOTO</h1>
+                                <p>
+                                    <span>Mis en vente depuis le...</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card filters">
+                        <a href="#"><img src="assets/images/Antman.jpg"></a>
+                        <div class="price">
+                            <h3>10 000 <br> FCFA</h3>
+                        </div>
+                        <div class="details">
+                            <div class="title">
+                                <h1>TOTO</h1>
+                                <p>
+                                    <span>Mis en vente depuis le...</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card filters">
+                        <a href="#"><img src="assets/images/back5.jpg"></a>
+                        <div class="price">
+                            <h3>10 000 <br> FCFA</h3>
+                        </div>
+                        <div class="details">
+                            <div class="title">
+                                <h1>TOTO</h1>
+                                <p>
+                                    <span>Mis en vente depuis le...</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="sidebar-left-actu">
+            <div class="sidebarLeft-actu">
+                <div class="sidebar-profile-box">
+                    <img src="assets/images/back1.jpg" class="couverture">
+                    
+                    <div class="sidebar-profile-info">
+                        <img src="assets/images/pic-4.png">
+        
+                        <h1>
+                            Oumar Thioubou
+                        </h1>
+        
+                        <ul>
+                            <li> {{ user.pays }} ({{ user.ville }}) <span class="fa fa-map-marker primary"></span></li>
+                            <li>{{ user.quartier }} <span class="fa fa-home primary"></span></li>
+                            <li>{{ user.email }} <span class="fa fa-envelope primary"></span></li>
+                            <li>+{{ user.indicatif_pays }} {{ user.number_phone }} <span class="fa fa-phone primary"></span></li>
+                        </ul>
+        
+                    </div>
+                </div>
+        
+                <div class="sidebar-profile-box">
+                    <div class="sidebar-share-profile">
+                        <h2>Vos Folowers:</h2>
+        
+                        <div class="sidebar-profile-info">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-profile-box">
+                    <div class="sidebar-share-profile">
+                        <h2>Partager votre compte sur:</h2>
+        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets/ressources/scripts/header.js"></script>
+</body>
+</html>

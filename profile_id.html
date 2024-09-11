@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALSEN</title>
+
+    <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/icones/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/ressources/styles/profiles_id.css">
+    <link rel="stylesheet" href="assets/ressources/styles/sidebarRight.css">
+</head>
+<body>
+
+    <section class="header" id="header">
+        <nav class="nav contenu">
+            <form class="search">
+                <div class="form-group">
+                    <input type="search" name="poste" id="search-input" placeholder="Rechercher un membre"/>
+                    <button type="submit">
+                        Rechercher
+                    </button>
+                </div>
+            </form>
+        </nav>
+    </section>
+    
+    <section class="profiles">
+        <div class="profiles-grid">
+            <a href="#" class="profile-card">
+                <img src="assets/images/back1.jpg">
+                <div class="infos">
+                    <div class="subject"><h3>Design</h3></div>
+                    <img src="assets/images/pic-4.png">
+                </div>
+                <h2 class="profile-name">Oumar Thioubou</h2>
+                <div class="profile-date">
+                    <span> <i class="fa fa-clock-o"></i> 4.9</span>
+                </div>
+            </a>
+
+            <a href="#" class="profile-card">
+                <img src="assets/images/back1.jpg">
+                <div class="infos">
+                    <div class="subject"><h3>Design</h3></div>
+                    <img src="assets/images/pic-4.png">
+                </div>
+                <h2 class="profile-name">Oumar Thioubou</h2>
+                <div class="profile-date">
+                    <span> <i class="fa fa-clock-o"></i> 4.9</span>
+                </div>
+            </a>
+
+            <a href="#" class="profile-card">
+                <img src="assets/images/back1.jpg">
+                <div class="infos">
+                    <div class="subject"><h3>Design</h3></div>
+                    <img src="assets/images/pic-4.png">
+                </div>
+                <h2 class="profile-name">Oumar Thioubou</h2>
+                <div class="profile-date">
+                    <span> <i class="fa fa-clock-o"></i> 4.9</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="sidebar-right-actu">
+        <div class="sidebarRight-actu">
+            <div class="sidebar-profile-box">
+                <img src="assets/images/back1.jpg" class="couverture">
+                
+                <div class="sidebar-profile-info">
+                    <img src="assets/images/pic-4.png">
+    
+                    <h1>
+                        Oumar Thioubou
+                    </h1>
+    
+                    <ul>
+                        <li> {{ user.pays }} ({{ user.ville }}) <span class="fa fa-map-marker primary"></span></li>
+                        <li>{{ user.quartier }} <span class="fa fa-home primary"></span></li>
+                        <li>{{ user.email }} <span class="fa fa-envelope primary"></span></li>
+                        <li>+{{ user.indicatif_pays }} {{ user.number_phone }} <span class="fa fa-phone primary"></span></li>
+                    </ul>
+    
+                </div>
+            </div>
+    
+            <div class="sidebar-profile-box">
+                <div class="sidebar-share-profile">
+                    <h2>Vos Folowers:</h2>
+    
+                    <div class="sidebar-profile-info">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-profile-box">
+                <div class="sidebar-share-profile">
+                    <h2>Partager votre compte sur:</h2>
+    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
